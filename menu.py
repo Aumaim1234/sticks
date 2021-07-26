@@ -1,5 +1,4 @@
 import random
-
 inStick = 20
 print("there are", inStick ,"sticks in the pile")
 player2 = str(input("What is your name: "))
@@ -8,7 +7,7 @@ i=1
 loopFlag = True
 while i<=inStick:
   loopFlag = True
-  if inStick >= 4 or inStick == 1: #ถ้าอยากให้คอมชนะตลอดให้เอาเงื่อนไขหลัง or ออก
+  if inStick >= 4 or inStick == 1: #ถ้าอยากให้คอมชนะตลอดให้เอาเงื่อนไขหลัง or ออก ##แม้จะเป็นturn ที่คอมต้องเลือก 1 เป็นตาสุดท้าย คอมจะไม่ยอมเลือกค่ะ จะโยนมาให้ผู้เล่นอีกคนเลือก
     p1Stick = random.randint(1,2)
     remainStick=inStick-p1Stick
     print(player1+" take" ,p1Stick, "sticks in the pile")
